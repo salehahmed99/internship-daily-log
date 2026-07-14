@@ -60,7 +60,7 @@ Then just say "sync today's notes" and the skill will pull your notes from Notio
 ## Project structure
 
 ```
-.agents/skills/internship-daily-log/
+.claude/skills/internship-daily-log/
 ├── SKILL.md              # Skill definition (instructions for Claude Code)
 ├── .env.example          # Template for Notion credentials
 └── scripts/
