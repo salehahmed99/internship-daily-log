@@ -1,4 +1,4 @@
-# daily-log
+# notion-daily-log
 
 Claude Code skill that turns rough daily notes into structured markdown logs and syncs them to Notion.
 
