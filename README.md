@@ -1,4 +1,4 @@
-# notion-daily-log
+# internship-daily-log
 
 Claude Code skill built for internship daily updates. It turns rough internship notes into structured markdown logs and syncs them to Notion.
 
