@@ -1,6 +1,8 @@
 # internship-daily-log
 
-Claude Code skill built for internship daily updates. It turns rough internship notes into structured markdown logs and syncs them to Notion.
+Harness-agnostic AI assistant skill built for internship daily updates. It turns rough internship notes into structured markdown logs and syncs them to Notion.
+
+The canonical skill lives under `.agents/skills` so it can be used by agent harnesses that support that convention, including Codex, Copilot, Gemini, Claude, and similar tools. The `.claude/skills` path is kept as a compatibility symlink for Claude-specific loaders.
 
 ## What it does
 
@@ -8,7 +10,7 @@ You paste in (or pull from Notion) your messy, unstructured internship notes —
 
 ## How to use it
 
-1. **Paste your notes** into Claude Code and ask for a write-up:
+1. **Paste your notes** into your AI assistant and ask for a write-up:
    - "here's what I did today"
    - "write up today's notes"
    - "daily log"
@@ -36,7 +38,7 @@ NOTION_DATABASE_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ### Scratchpad page (optional)
 
-If you'd rather type your raw notes into a Notion page instead of pasting them into Claude Code:
+If you'd rather type your raw notes into a Notion page instead of pasting them into your assistant:
 
 1. Create a page in Notion for your daily scratchpad.
 2. Share it with the same integration.
@@ -50,7 +52,7 @@ Then just say "sync today's notes" and the skill will pull your notes from Notio
 
 ## Setup
 
-1. Clone this repo into your project (or anywhere Claude Code can reach it).
+1. Clone this repo into your project, or place the skill folder anywhere your assistant harness can read from `.agents/skills`.
 2. Install the Python dependency:
    ```bash
    pip install requests
@@ -60,11 +62,12 @@ Then just say "sync today's notes" and the skill will pull your notes from Notio
 ## Project structure
 
 ```
-.claude/skills/internship-daily-log/
-├── SKILL.md              # Skill definition (instructions for Claude Code)
+.agents/skills/internship-daily-log/
+├── SKILL.md              # Skill definition (instructions for the assistant)
 ├── .env.example          # Template for Notion credentials
 └── scripts/
     ├── push_to_notion.py     # Pushes a markdown log to a Notion database
     └── read_notion_page.py   # Pulls raw notes from a Notion scratchpad page
+.claude/skills                # Compatibility symlink to ../.agents/skills
 daily-reports/                # Generated markdown logs (DD-MM-YYYY.md)
 ```
