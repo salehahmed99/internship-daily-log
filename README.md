@@ -1,10 +1,10 @@
 # notion-daily-log
 
-Claude Code skill that turns rough daily notes into structured markdown logs and syncs them to Notion.
+Claude Code skill built for internship daily updates. It turns rough internship notes into structured markdown logs and syncs them to Notion.
 
 ## What it does
 
-You paste in (or pull from Notion) your messy, unstructured daily notes — bullet points, half-finished sentences, stream-of-consciousness — and it produces a clean, structured markdown report organized into sections like Summary, Tasks Worked On, Research & Learning, Decisions Made, and Next Steps. The output is saved locally as a markdown file and optionally pushed to a Notion database.
+You paste in (or pull from Notion) your messy, unstructured internship notes — bullet points, half-finished sentences, stream-of-consciousness updates, and end-of-day reminders — and it produces a clean, structured internship report organized into sections like Summary, Tasks Worked On, Research & Learning, Decisions Made, and Next Steps. The output is saved locally as a markdown file and optionally pushed to a Notion database.
 
 ## How to use it
 
